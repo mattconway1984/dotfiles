@@ -1,0 +1,4 @@
+-I/home/mconway/.local/include
+-I/var/ninox-sdk/include
+-I/var/ninox-sdk/include/czmq
+-I/var/ninox-sdk/include/zmq

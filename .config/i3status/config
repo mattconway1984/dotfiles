@@ -1,0 +1,30 @@
+general {
+    colors = true
+    color_good = '#00cc00'
+    color_degraded = '#0099ff' 
+    color_bad = '#ff4d4d' 
+    interval = 1
+}
+
+order += "ethernet enp0s31f6"
+order += "disk /"
+order += "load"
+order += "time"
+
+ethernet enp0s31f6 {
+    format_up = "%ip"
+    format_down = "N/A"
+}
+
+load {
+    format = "CPU %1min"
+}
+
+disk "/" {
+    format = "%avail Free"
+}
+
+time {
+    format = "%Y-%m-%d %H:%M:%S"
+}
+
