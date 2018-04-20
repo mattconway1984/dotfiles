@@ -37,7 +37,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Screen lock
-bindsym $mod+Shift+Return exec i3lock
+bindsym $mod+Shift+Return exec /home/mconway/.config/i3lock/i3lock.sh
 
 # kill focused window
 bindsym $mod+Shift+q kill
