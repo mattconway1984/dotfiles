@@ -7,18 +7,18 @@ TEXT='#66ccff99'
 LINE='#00000000'
 
 # Colors used when user enters password
-B_INPUT='#ffff00ff'
-R_INPUT='#ffffffff'
+B_INPUT='#00669999'
+R_INPUT='#003366ff'
 
 # Colors used when verifying password input
-B_VERIFY='#000000ff'
-R_VERIFY='#000000ff'
-T_VERIFY='#000000ff'
+B_VERIFY='#00993399'
+R_VERIFY='#003300ff'
+T_VERIFY='#66ff33ff'
 
 # Colors used when wrong password entered
-B_WRONG='#000000ff'
-R_WRONG='#000000ff'
-T_WRONG='#000000ff'
+B_WRONG='#ff0000ff'
+R_WRONG='#800000ff'
+T_WRONG='#ffffccff'
 
 i3lock -i /home/mconway/.config/lockscreen.jpg -t \
 \
