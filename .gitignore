@@ -15,4 +15,5 @@
 !.Xdefaults
 !.vimrc
 !.vim_runtime
+.vim_runtime/temp_dirs/*
 !.local/share/fonts
