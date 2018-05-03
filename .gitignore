@@ -1,19 +1,38 @@
+
+# Ignore everything in the top level:
 /*
+# Except for these:
 !.bashrc
 !.gitignore
-.config/*
-!.config/compton.conf
-!.config/i3
-!.config/i3lock
-!.config/i3status
-!.config/wallpaper.png
-!.config/lockscreen.png
-!.config/
 !.fehbg
 !.HipChat
 !.xinitrc
 !.Xdefaults
 !.vimrc
-!.vim_runtime
-.vim_runtime/temp_dirs/*
-!.local/share/fonts
+
+# Ignore everyting in .config:
+.config/*
+# Except for these:
+!/.config/compton.conf
+!/.config/i3
+!/.config/i3lock
+!/.config/i3status
+!/.config/wallpaper.png
+!/.config/lockscreen.png
+# Ensure the "except for these" files are not ignored:
+!/.config/
+
+# Include everything inside .vim_runtime:
+!/.vim_runtime
+# Except for these:
+/.vim_runtime/temp_dirs/*
+
+# Ignore everything in .local:
+/.local/*
+/.local/share/*
+# Except for files in these directories:
+!/.local/share/fonts
+!/.local/share/fonts/opentype
+# Ensure the "except for these" files are not ignored:
+!/.local/share
+!/.local/
