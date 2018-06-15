@@ -24,6 +24,9 @@ let g:syntastic_cpp_config_file = '~/.vim_runtime/ninox_includes.syntastic'
 " Turn on the columcount:
 set cc=80
 
+" Use the CLIPBOARD buffer in X:
+set clipboard=unnamedplus
+
 
 
 
