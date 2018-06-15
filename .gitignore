@@ -22,10 +22,19 @@
 # Ensure the "except for these" files are not ignored:
 !/.config/
 
-# Include everything inside .vim_runtime:
-!/.vim_runtime
+# Include everything inside .vim_runtime
+#
+# Ignore everything inside .vim_runtime
+/.vim_runtime/*
 # Except for these:
-/.vim_runtime/temp_dirs/*
+/.vim_runtime/autoload
+/.vim_runtime/my_configs.vim
+/.vim_runtime/my_plugins/
+/.vim_runtime/ninox_includes.syntastic
+/.vim_runtime/sources_forked/
+/.vim_runtime/sources_non_forked/
+/.vim_runtime/update_plugins.py
+/.vim_runtime/vimrcs
 
 # Ignore everything in .local:
 /.local/*
@@ -33,6 +42,8 @@
 # Except for files in these directories:
 !/.local/share/fonts
 !/.local/share/fonts/opentype
+/.local/share/fonts/.uuid
+/.local/share/fonts/opentype/.uuid
 # Ensure the "except for these" files are not ignored:
 !/.local/share
 !/.local/
