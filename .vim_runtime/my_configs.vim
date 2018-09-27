@@ -24,7 +24,7 @@ let g:syntastic_c_config_file='/home/mconway/.vim_runtime/ninox_includes.syntast
 let g:syntastic_quiet_messages = {'regex': 'test_.*'}
 
 " Turn on the columcount:
-set cc=80
+set cc=81
 
 " Use the CLIPBOARD buffer in X:
 set clipboard=unnamedplus

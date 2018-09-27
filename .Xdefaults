@@ -1,11 +1,13 @@
 !! URXVT Terminal configuration....
 
 !! General config:
+urxvt.termName: xterm-256color
 urxvt.scrollBar: false
 urxvt.background: black
 urxvt.foreground: gray
 urxvt.transparent: true
 urxvt.shading: 20
+URxvt.scrollstyle: rxvt
 
 !! Graphics settings:
 Xft*dpi: 96
