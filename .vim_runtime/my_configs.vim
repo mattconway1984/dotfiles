@@ -21,6 +21,7 @@ set nowrap
 " Configure some extra syntastic CPP include directories
 let g:syntastic_cpp_config_file = '/home/mconway/.vim_runtime/ninox_includes.syntastic'
 let g:syntastic_c_config_file='/home/mconway/.vim_runtime/ninox_includes.syntastic'
+" header files that start [test_] are auto-generated so ignore checking them
 let g:syntastic_quiet_messages = {'regex': 'test_.*'}
 
 " Turn on the columcount:
