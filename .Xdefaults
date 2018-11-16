@@ -1,11 +1,19 @@
 !! URXVT Terminal configuration....
 
+!! Add escape code binds for the HOME and END keys so they work over ssh
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+URxvt.keysym.KP_Home: \033[1~
+URxvt.keysym.KP_End:  \033[4~
+
 !! General config:
-urxvt.termName: xterm-256color
+XTerm*termName: xterm-256color
+urxvt*termName: rxvt-unicode 
 urxvt.scrollBar: false
-urxvt.background: black
+!!urxvt.background: black
+urxvt.background: rgb:00/0d/1a
 urxvt.foreground: gray
-urxvt.transparent: true
+urxvt.transparent: false 
 urxvt.shading: 20
 URxvt.scrollstyle: rxvt
 
