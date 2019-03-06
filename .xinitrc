@@ -39,6 +39,7 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 setxkbmap gb &
+xscreensaver &
 sh ~/.fehbg &
 exec compton --config=.config/compton.conf &
 exec i3
