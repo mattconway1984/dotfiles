@@ -41,6 +41,5 @@ fi
 setxkbmap gb &
 xscreensaver &
 sh ~/.fehbg &
-exec compton --config=.config/compton.conf &
 exec i3
 

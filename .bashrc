@@ -9,26 +9,6 @@
 alias ls='ls --color=auto'
 alias l='ls --color=auto'
 
-alias pt='python -m pytest '
-
-alias gdi='git difftool '
-alias gme='git merge '
-alias gco='git checkout '
-alias gbr='git branch '
-alias gcm='git commit '
-alias grb='git rebase '
-
-alias dev='cd ~/dev'
-alias ninoxcc='cd ~/dev/ninoxcc'
-alias pynox='cd ~/dev/pynox'
-alias sysctrl='cd ~/dev/sysctrl'
-alias pyowlstone='cd ~/dev/pyowlstone'
-alias owlhal='cd ~/dev/owl-hal'
-alias sysagg='cd ~/dev/system-aggregator'
-alias avcadlib='cd ~/dev/avcadlib'
-alias defencelib='cd ~/dev/defencelib'
-
-
 PS1='[\u@\h \W]\$ '
 
 # Stop logging of repeated identical commands:
