@@ -28,8 +28,4 @@ let g:syntastic_quiet_messages = {'regex': 'test_.*'}
 set cc=81
 
 " Use the CLIPBOARD buffer in X:
-set clipboard=unnamedplus
-
-
-
-
+set clipboard=unnamed
