@@ -8,6 +8,7 @@
 # Commonly used commands:
 alias ls='ls --color=auto'
 alias l='ls --color=auto'
+alias android='/home/mconway/.config/simple-mtpfs'
 
 PS1='[\u@\h \W]\$ '
 

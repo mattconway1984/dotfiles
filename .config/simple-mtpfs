@@ -1,0 +1,28 @@
+#! /usr/bin/env bash
+
+#Script for simple-mtpfs
+
+PS3=$'\nSelect an option.: '
+
+#mount directory
+dir="$HOME/phone"
+					
+while :; do
+    clear
+    options="Quit List_Device Mount Umount"
+    select opt in $options; do
+        case $opt in
+            Quit) clear; exit
+            ;;
+
+            List_Device) simple-mtpfs --list-devices
+            ;;
+            
+            Mount) simple-mtpfs "$dir"; echo "Mounted to "$dir"" 
+            ;;
+
+            Umount) fusermount -u "$dir"; echo "Unmounted" 
+            ;;
+        esac
+    done
+done

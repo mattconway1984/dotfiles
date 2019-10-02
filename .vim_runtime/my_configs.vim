@@ -29,3 +29,7 @@ set cc=81
 
 " Use the CLIPBOARD buffer in X:
 set clipboard=unnamed
+
+if has("gui_running")
+    set guifont=SourceCodePro Regular 12
+endif

@@ -4,6 +4,7 @@ general {
     color_degraded = '#0099ff' 
     color_bad = '#ff4d4d' 
     interval = 1
+    output_format = i3bar
 }
 
 order += "ethernet eno1"
