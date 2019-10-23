@@ -1,26 +1,29 @@
 #!/bin/sh
+# NOTE: This script relies on package: i3lock-color-git
+
 
 # Color for text
 TEXT='#66ccff99'
 
 # Line color between background (B) and ring (R)
-LINE='#00000000'
+LINE='00000000'
 
 # Colors used when user enters password
-B_INPUT='#00669999'
-R_INPUT='#003366ff'
+B_INPUT='00669999'
+R_INPUT='003366ff'
 
 # Colors used when verifying password input
-B_VERIFY='#00993399'
-R_VERIFY='#003300ff'
-T_VERIFY='#66ff33ff'
+B_VERIFY='00993399'
+R_VERIFY='003300ff'
+T_VERIFY='66ff33ff'
 
 # Colors used when wrong password entered
-B_WRONG='#ff0000ff'
-R_WRONG='#800000ff'
-T_WRONG='#ffffccff'
+B_WRONG='ff000099'
+R_WRONG='800000ff'
+T_WRONG='ffffccff'
 
-i3lock -i /home/mconway/.config/lockscreen.jpg -t \
+
+i3lock -i /home/mconway/.config/lockscreen.png -t \
 \
 --linecolor=$LINE \
 --timecolor=$TEXT \
