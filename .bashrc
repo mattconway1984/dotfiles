@@ -5,10 +5,16 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Commonly used commands:
+# Setup ls alisas (supports silly typos when trying to run ls command) 
 alias ls='ls --color=auto'
 alias l='ls --color=auto'
+alias sl='ls --color=auto'
+
+# Run script to mount my android phone:
 alias android='/home/mconway/.config/simple-mtpfs'
+
+# TARTS alias
+alias tarts="/home/mconway/.scripts/tarts"
 
 PS1='[\u@\h \W]\$ '
 

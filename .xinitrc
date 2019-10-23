@@ -36,6 +36,6 @@ setxkbmap gb &
 xscreensaver &
 /bin/bash ~/.fehbg &
 /bin/bash xbindkeys --poll-rc &
-#/bin/bash ~/.screenlayout/layout.sh &
+/bin/bash ~/.screenlayout/layout.sh &
 exec i3
 
