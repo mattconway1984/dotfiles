@@ -24,8 +24,8 @@ Xft*antialias: true
 Xft*hinting: full
 
 !! Font configuration:
-urxvt.font: xft:DejaVu Sans Mono:pixelsize=14
-urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=15:weight=bold
+urxvt.font: xft:DejaVu Sans Mono:pixelsize=18
+urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=18:weight=bold
 urxvt.letterSpace: -1
 
 !! Larger history limit

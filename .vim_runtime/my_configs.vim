@@ -31,5 +31,5 @@ set cc=81
 set clipboard=unnamed
 
 if has("gui_running")
-    set guifont=SourceCodePro Regular 12
+    set guifont=SourceCodePro Regular 16
 endif
