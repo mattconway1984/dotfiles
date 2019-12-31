@@ -7,7 +7,7 @@ general {
     output_format = i3bar
 }
 
-order += "ethernet eno1"
+order += "ethernet enp0s3"
 order += "memory"
 order += "cpu_usage"
 order += "cpu_temperature 0"
@@ -16,7 +16,7 @@ order += "disk /cache"
 order += "disk /opt/virtualbox"
 order += "time"
 
-ethernet eno1 {
+ethernet enp0s3 {
     format_up = "%ip %speed"
     format_down = "N/A"
 }

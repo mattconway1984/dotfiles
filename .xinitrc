@@ -32,10 +32,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# Setup everything (in parallel):
+loadkeys uk &
 setxkbmap gb &
 xscreensaver &
+VBoxClient-all &
+/bin/bash ~/.vbox.sh &
 /bin/bash ~/.fehbg &
-/bin/bash xbindkeys --poll-rc &
-#/bin/bash ~/.screenlayout/layout.sh &
-exec i3
+/bin/bash xbindkeys --poll-rc
 
+# Now start i3:
+exec i3
