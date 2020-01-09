@@ -28,7 +28,7 @@ let g:syntastic_quiet_messages = {'regex': 'test_.*'}
 set cc=81
 
 " Use the CLIPBOARD buffer in X:
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 if has("gui_running")
     set guifont=SourceCodePro Regular 12

@@ -41,6 +41,11 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec /home/mconway/.config/i3lock/i3lock.sh
 #bindsym $mod+Shift+Return exec /home/mconway/.config/i3lock/xscreensaver.sh
 
+# Start Chrome
+bindsym $mod+BackSpace exec chromium
+
+# Start VirtualBox
+bindsym $mod+b exec VirtualBox
 
 # kill focused window
 bindsym $mod+Shift+q kill

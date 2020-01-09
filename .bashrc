@@ -33,3 +33,6 @@ complete -cf sudo
 
 # Set the variable used by ssh-agent to specify which socket it shall bind to
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+
+# Ensure GB keys are loaded:
+setxkbmap gb
