@@ -40,7 +40,7 @@ shift $((OPTIND - 1))
 #####################################
 if [ -z "${1:-}" ]; then
   echo "unknown version: '${1:-}'"
-  echo "First argument must be 'vim-7.4', 'vim-8.0', or 'nvim'."
+  echo "First argument must be 'vim-8.0' or 'nvim'."
   exit 1
 fi
 
@@ -69,7 +69,7 @@ find "$vimgodir" -name '*_test.vim' | while read test_file; do
   "$vimgodir/scripts/run-vim" $coverage $vim -e \
     +"silent e $test_file" \
     +"let g:test_verbose=$verbose" \
-    -S ./scripts/runtest.vim || (
+    -S ./scripts/runtest.vim < /dev/null || (
       # If Vim exits with non-0 it's almost certainly a bug in the test runner;
       # should very rarely happen in normal usage.
       echo 'test runner failure'
