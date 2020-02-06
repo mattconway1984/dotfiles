@@ -1,3 +1,4 @@
 #!/bin/sh
 sleep 1
-feh --no-fehbg --bg-fill '/home/mconway/.config/wallpaper.png' 
+#feh --no-fehbg --bg-fill '/home/mconway/.config/wallpaper.png' 
+feh --no-fehbg --bg-fill '/home/mconway/.config/JoshuaBW.jpg' 
