@@ -27,10 +27,13 @@ set cc=81
 " Use the CLIPBOARD buffer in X:
 set clipboard=unnamedplus
 
-
 " Show tabs (if there are tabs):
 set listchars=eol:¬,tab:>-
 
+" Modify the font if running in a GUI (i.e. not in a terminal window)
 if has("gui_running")
     set guifont=SourceCodePro Regular 12
 endif
+
+" Prevent auto complete for paranthesis, quotes etc..
+let g:AutoPairs = {}
