@@ -7,24 +7,15 @@ general {
     output_format = i3bar
 }
 
-order += "ethernet eno1"
-order += "memory"
+order += "ethernet eth0"
 order += "cpu_usage"
 order += "cpu_temperature 0"
 order += "disk /"
-order += "disk /cache"
-order += "disk /opt/virtualbox"
 order += "time"
 
 ethernet eno1 {
     format_up = "%ip %speed"
     format_down = "N/A"
-}
-
-memory {
-	format = "mem: %used/%total"
-    threshold_critical = 10%
-    format_degraded = "mem: %used/%total"
 }
 
 cpu_usage { 
@@ -37,18 +28,6 @@ disk "/" {
     format = "rootfs: %percentage_used"
     low_threshold = 10 
     format_below_threshold = "rootfs: %percentage_used"
-}
-
-disk "/cache" {
-	format = "cache: %percentage_used"
-    low_threshold = 10 
-    format_below_threshold = "cache: %percentage_used"
-}
-
-disk "/opt/virtualbox" {
-	format = "vm: %percentage_used"
-    low_threshold = 10 
-    format_below_threshold = "vm: %percentage_used"
 }
 
 time {

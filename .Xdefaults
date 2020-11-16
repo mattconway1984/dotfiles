@@ -29,7 +29,7 @@ urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=15:weight=bold
 urxvt.letterSpace: -1
 
 !! Larger history limit
-urxvt.saveLines: 1000000
+urxvt.saveLines: 10000
 
 !! Launch URLs with Chromium:
 urxvt.urlLauncher: /usr/bin/chromium
