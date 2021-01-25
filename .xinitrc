@@ -37,7 +37,6 @@ loadkeys uk &
 setxkbmap gb &
 xscreensaver &
 VBoxClient-all &
-/bin/bash ~/.vbox.sh &
 /bin/bash ~/.fehbg &
 /bin/bash xbindkeys --poll-rc
 
