@@ -66,17 +66,6 @@ command! -nargs=+ TVarArg exec tlib#arg#Let([<args>])
 command! -nargs=1 -complete=command TBrowseOutput call tlib#cmd#BrowseOutput(<q-args>)
 
 
-" :display: :TBrowseScriptnames
-" List all sourced script names (the output of ':scriptnames').
-"
-" When you press enter, the selected script will be opened in the current
-" window. Press ESC to cancel.
-"
-" EXAMPLES: >
-"   TBrowseScriptnames 
-command! -nargs=0 -complete=command TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()
-
-
 " :display: :Tlibtrace GUARD, VAR1, VAR2...
 " Do nothing unless |tlib#trace#Enable()| was called.
 " 
